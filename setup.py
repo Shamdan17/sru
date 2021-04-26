@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 import codecs
 
-PACKAGE = 'sru'
+PACKAGE = 'ssru'
 
 
 def readme():
@@ -35,7 +35,7 @@ setup(
     # Package information
     name=PACKAGE,
     version=get_version(),
-    description='Simple Recurrent Units for Highly Parallelizable Recurrence',
+    description='Simpler Simple Recurrent Units for Highly Parallelizable Recurrence',
     long_description=readme(),
     long_description_content_type="text/markdown",  # make pypi render long description as markdown
     keywords='deep learning rnn lstm cudnn sru fast pytorch torch',
@@ -49,7 +49,7 @@ setup(
     license='MIT',
 
     # What is packaged here.
-    packages=['sru', 'sru/csrc'],
+    packages=['ssru', 'ssru/csrc'],
 
     # What to include
     package_data={
